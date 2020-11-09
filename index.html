@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coding Quiz</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="scores" id="scores">
+            <button class="btn" type="submit" id="high-scores">View high scores</button>
+            <div id="score-screen">
+                <h1>High Scores</h1>
+                <ol id="scorelist">
+                    <li id="score"><span id="initial-span"></span> - <span id="score-span"></span></li>
+                </ol>
+                <button id="back-btn" class="btn">Back</button>
+                <button id="clear-btn" class="btn">Clear</button>
+            </div>
+        </div>
+        <h2 id="countdown"></h2>
+    </header>
+    <main>
+        <div class="container" id="main-container">
+            <div id="start-screen">
+                <h1>Coding Quiz</h1>
+                <p>
+                    Answer the following code related questions within the time limit.
+                    Incorrect answers will penalize your score & time by 10 seconds!
+                </p>
+                <button class="btn" id="start-btn">Start</button>
+            </div>
+            <div id=quiz>
+                <div id="question">Questions</div>
+                <div id="option-btns" class="btn-grid">
+                    <label class="option"><input type="radio" name="option" value="1"><span id="optn1"></span></label>
+                    <label class="option"><input type="radio" name="option" value="2"><span id="optn2"></span></label>
+                    <label class="option"><input type="radio" name="option" value="3"><span id="optn3"></span></label>
+                    <label class="option"><input type="radio" name="option" value="4"><span id="optn4"></span></label> 
+                    <button id="next-btn" class="btn">Next</button>
+                </div>
+                <h2 id="alert-msg"></h2>
+            </div>
+            <div id="end-screen">
+                <h1>Finish!</h1>
+                <h2 id="your-score"></h2>
+                <div class="form-group">
+                    <input id="intial-box" type="text" name="initials" class="text-input" placeholder="Initials">
+                </div>
+                <div class="form-group">
+                    <button class="btn" id="save-score" type="submit">Submit</button>
+                </div>
+            </div>
+            <div id="feedback"></div>
+        </div>
+    </main>
+
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
